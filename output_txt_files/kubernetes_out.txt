@@ -1,1 +1,20 @@
-<paste log output from Kubernetes-mediated prediction, here>
+voclabs:~/environment/udacity_project4 (main) $ kubectl logs app
+python3 app.py
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 159-644-010
+
+
+voclabs:~/environment/udacity_project4 (main) $ sh make_prediction.sh 
+Port: 8080
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
